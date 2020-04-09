@@ -1,0 +1,58 @@
+{
+    "recipes" : [
+        {
+            "id": 1,
+            "title": "Pancakes",
+            "time_minutes": 20,
+            "price": 15,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "https://t2.rg.ltmcdn.com/es/images/5/3/3/panqueques_americanos_salados_60335_600_square.jpg",
+            "tags" : [
+                {"id": 1, "name": "Breakfast"}
+            ],
+            "ingredients": [
+                {"id": 1, "name": "harina"},
+                {"id": 2, "name": "huevos"},
+                {"id": 3, "name": "leche"}
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Potato omelette",
+            "time_minutes": 25,
+            "price": 20,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "https://www.tortilladepatatas.online/wp-content/uploads/2018/04/como-se-hacen-las-tortillas.png",
+            "tags" : [
+                {"id": 1, "name": "Lunch"}
+            ],
+            "ingredients": [
+                {"id": 2, "name": "huevos"},
+                {"id": 4, "name": "papas"},
+                {"id": 5, "name": "cebolla"}
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Strogonoff rice",
+            "time_minutes": 35,
+            "price": 40,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "https://www.melonsinjamon.com/wp-content/uploads/2019/12/strogonoff-de-champi%C3%B1ones-vegano-500x500.jpg",
+            "tags" : [
+                {"id": 1, "name": "Lunch"}
+            ],
+            "ingredients": [
+                {"id": 5, "name": "cebolla"},
+                {"id": 6, "name": "arroz"},
+                {"id": 7, "name": "pollo"},
+                {"id": 8, "name": "crema de leche"},
+                {"id": 9, "name": "mostaza"},
+                {"id": 10, "name": "ketchup"},
+                {"id": 11, "name": "salsa inglesa"},
+                {"id": 12, "name": "champiniones"}
+            ]
+        }
+
+    ]
+}
