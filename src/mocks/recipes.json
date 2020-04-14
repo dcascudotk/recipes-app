@@ -6,7 +6,7 @@
             "time_minutes": 20,
             "price": 15,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "image": "https://t2.rg.ltmcdn.com/es/images/5/3/3/panqueques_americanos_salados_60335_600_square.jpg",
+            "image": "panqueques.jpg",
             "tags" : [
                 {"id": 1, "name": "Breakfast"}
             ],
@@ -22,7 +22,7 @@
             "time_minutes": 25,
             "price": 20,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "image": "https://www.tortilladepatatas.online/wp-content/uploads/2018/04/como-se-hacen-las-tortillas.png",
+            "image": "tortillas.png",
             "tags" : [
                 {"id": 1, "name": "Lunch"}
             ],
@@ -38,7 +38,7 @@
             "time_minutes": 35,
             "price": 40,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "image": "https://www.melonsinjamon.com/wp-content/uploads/2019/12/strogonoff-de-champi%C3%B1ones-vegano-500x500.jpg",
+            "image": "strogonoff.jpg",
             "tags" : [
                 {"id": 1, "name": "Lunch"}
             ],

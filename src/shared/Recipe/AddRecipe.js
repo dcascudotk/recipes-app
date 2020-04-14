@@ -4,7 +4,7 @@ import useInputState from '../../hooks/useInputState';
 import './AddRecipe.css';
 import noImage from '../../images/no-image-box.png';
 
-export default function AddRecipe(){
+function AddRecipe(){
 
     const [titleInput, hanldeTitleInput, resetTitleInput] = useInputState("");
     const [descriptionInput, hanldeDescriptionInput, resetDescriptionInput] = useInputState("");
@@ -15,12 +15,25 @@ export default function AddRecipe(){
 
     const submitClick = () => {
 
-        resetTitleInput
+        //Handle add recipe
+
+        //reset inputs
+        resetInputs();
+    };
+
+    const resetInputs = () => {
+        resetTitleInput();
+        resetDescriptionInput();
+        resetMinutesInput();
+        resetPriceInput();
+        resetImageInput();
+        resetIngredientInput();
     };
 
     return(
         <div className='row'>
             <div className='col-md-6 offset-md-3'>
+                <h1>Add new recipe</h1>
                 <form>
                     <div className="form-group">
                         <label htmlFor="title">Title</label>
@@ -29,7 +42,7 @@ export default function AddRecipe(){
                                id="title" 
                                placeholder="" 
                                value={titleInput} 
-                               onChange={hanldeTitleinput} />
+                               onChange={hanldeTitleInput} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">Description</label>
@@ -57,12 +70,13 @@ export default function AddRecipe(){
                                value={priceInput} 
                                onChange={hanldePriceInput} />
                     </div>
-                    <div class="form-group">
-                        <label for="image">Upload image</label>
+                    <div className="form-group">
+                        <label htmlFor="image">Upload image</label>
                         <input type="file" 
-                               class="form-control-file" 
+                               className="form-control-file" 
                                id="file" 
-                               value={imageInput} />
+                               value={imageInput}
+                               onChange={hanldeImageInput}/>
 
                         <img src={noImage} alt="no-image" className="AddRecipe-img"/>
                     </div>                        
@@ -73,8 +87,8 @@ export default function AddRecipe(){
                                id="tag" 
                                placeholder="" 
                                />
-                        <span class="badge badge-pill badge-secondary ml-1">Breakfast</span>
-                        <span class="badge badge-pill badge-secondary ml-1">Vegetarian</span>
+                        <span className="badge badge-pill badge-secondary ml-1">Breakfast</span>
+                        <span className="badge badge-pill badge-secondary ml-1">Vegetarian</span>
                     </div>
                     <div className="form-group">
                         <label htmlFor="ingredient">Ingredients</label>
@@ -90,4 +104,6 @@ export default function AddRecipe(){
             </div>
         </div>
     )
-}
+};
+
+export default AddRecipe;

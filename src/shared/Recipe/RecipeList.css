@@ -1,3 +1,8 @@
 .RecipeList{
     margin-top: 2rem;
 }
+
+.RecipeList-Add{
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
