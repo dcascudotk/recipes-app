@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import RecipeCard from "./RecipeCard";
 import './RecipeList.css'
 import { Link } from "react-router-dom/cjs/react-router-dom";
@@ -9,7 +9,7 @@ function RecipeList(){
     const {recipes} = useContext(RecipeContext);
     const list = recipes.map(r => {
         return (
-            <div className="col col-md-4" key={r.id}>
+            <div className="col col-md-4 col-sm-6" key={r.id}>
                 <RecipeCard info={r} key={r.id} id={r.id} />
             </div>
         )
@@ -17,9 +17,6 @@ function RecipeList(){
 
     return(
         <div className="RecipeList">
-            <div className="RecipeList-Add row">
-                <Link className="btn btn-primary" to="/recipe/0">Add Recipe</Link>
-            </div>
             <div className="row">
                 {list}
             </div>

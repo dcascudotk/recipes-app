@@ -1,4 +1,36 @@
-.RecipeForm-img{
+.RecipeForm-img {
+    position: relative;
+    margin-top: 1em;
+
+    -webkit-box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+    -moz-box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+    box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+}
+
+.RecipeForm-img img {
     width: 100%;
     height: auto;
+    position: relative;
+    display: flex;
+}
+
+.RecipeForm-trash {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    z-index: 1000;
+}
+
+.RecipeForm-badge {
+    padding: 0.8em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.RecipeForm-badge i{
+    margin-left: 1em;
+}
+
+.RecipeForm-badge i:hover{
+    cursor: pointer;
 }

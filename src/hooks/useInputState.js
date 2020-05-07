@@ -10,5 +10,9 @@ export default initialValue => {
         setValue("");
     }
 
-    return [value, handleChange, reset];
+    const set = (value) => {
+        setValue(value);
+    }
+
+    return [value, handleChange, set, reset];
 }

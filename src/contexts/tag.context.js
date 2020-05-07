@@ -1,28 +1,28 @@
 import React, {createContext, useState, useEffect } from "react";
 import Axios from "axios";
 
-export const IngredientContext = createContext();
+export const TagContext = createContext();
 
-export function IngredientProvider(props){
+export function TagProvider(props){
 
-    const [ingredients, setIngredients] = useState([]);
+    const [tags, setTags] = useState([]);
     useEffect(() => {
         async function getData(){
-            const response = await Axios.get('http://127.0.0.1:8000/api/recipe/ingredients/');
+            const response = await Axios.get('http://127.0.0.1:8000/api/recipe/tags/');
             response.data.push({
                 id: 0,
-                name: "select ingredient"
+                name: "select tag"
             });
-            setIngredients(response.data);
+            setTags(response.data);
         };
         getData();
     }, []);
 
-    const addIngredient = (ingredient) => {
+    const addTag = (tag) => {
         async function add(){
             const response = await Axios.post(
-                'http://127.0.0.1:8000/api/recipe/ingredients/', 
-                ingredient,
+                'http://127.0.0.1:8000/api/recipe/tags/', 
+                tag,
                 {
                     headers: {
                         'Authorization': 'Token e02f2bb130748e69bc71d608ba464716c47dd048'
@@ -36,8 +36,8 @@ export function IngredientProvider(props){
     
 
     return(
-        <IngredientContext.Provider value={{ingredients, addIngredient}}>
+        <TagContext.Provider value={{tags, addTag}}>
             {props.children}
-        </IngredientContext.Provider>
+        </TagContext.Provider>
     )
 }

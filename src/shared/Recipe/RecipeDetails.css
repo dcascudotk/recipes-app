@@ -1,0 +1,21 @@
+.RecipeDetails {
+    display: block;
+
+    -webkit-box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+    -moz-box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+    box-shadow: 10px 9px 22px -8px rgba(0,0,0,0.48);
+}
+
+.card-img {
+    padding: 0.8rem;
+}
+
+.RecipeDetails-body {
+    position: relative;
+}
+
+.RecipeDetails-body a {
+    position: absolute;
+    top: 70%;
+    left: 90%;
+}
